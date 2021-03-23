@@ -1,0 +1,74 @@
+/* reset css */
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Open Sans', sans-serif;
+    margin: 0;
+}
+h1,h2,ul,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+}
+*{
+    box-sizing: border-box;
+}
+/* theme */
+:root{
+    --color-default: #222;
+    --color-warning: #c0392b;
+    --color-font-header: #fff;
+}
+header h1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    line-height: 6.5rem;
+    background-color: var(--color-warning);
+    color: var(--color-font-header);
+    text-align: center;
+    margin-bottom: 6.5rem;
+    width: 100%;
+
+}
+header h1 .material-icons{
+    font-size: 3rem;
+    vertical-align: -0.3rem;
+}
+main, footer{
+    max-width: 100rem;
+    margin: 7rem auto 0;
+    
+}
+footer{
+    margin-top: 1rem;
+}
+footer p, footer details summary{
+    padding: .5rem;
+    text-align: center;
+}
+main > ul li img{
+    display: block;
+    width: 100%;
+    /* il faut ajouter des choses */
+}
+main > ul{
+    margin-top: 9rem;
+    background-color: #fafafa;
+    overflow: hidden; /* masque */
+    padding: 1rem 0 0 1rem;
+    box-shadow: 0 0 1rem var(--color-default);
+    
+}
+main ul li{
+    width: calc(100% / 4 - 1rem);
+    float: left;
+    margin:0 1rem 1rem 0;
+}
+main ul li:last-child{ /* dernier LI */
+    width: calc(100%  - 1rem);
+
+}
